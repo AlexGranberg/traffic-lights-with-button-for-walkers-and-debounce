@@ -109,7 +109,7 @@ int main(void) {
 
         if (elapsed_millis >= YELLOW_DURATION && stateStartTime > 0) {
             if (stateStartTime == current_millis - YELLOW_DURATION) {
-            // Transition from yellow to red
+  
             state = STATE_RED;
             stateStartTime = current_millis;
             }
@@ -124,7 +124,7 @@ int main(void) {
         // Check if red state duration has elapsed
         if (elapsed_millis >= RED_DURATION) {
             if (stateStartTime + RED_DURATION <= current_millis) {
-            // Transition from red to yellow
+   
             state = STATE_YELLOW_TO_GREEN;
             stateStartTime = current_millis;
             }
@@ -139,7 +139,7 @@ int main(void) {
         // Check if yellow state duration has elapsed
         if (elapsed_millis >= YELLOW_DURATION) {
             if (stateStartTime + YELLOW_DURATION <= current_millis) {
-            // Transition from yellow to green
+ 
             state = STATE_GREEN;
             stateStartTime = 0;
             }
