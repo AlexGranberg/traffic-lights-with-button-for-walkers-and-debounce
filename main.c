@@ -16,8 +16,8 @@
 #define RED_WALK 6
 
 #define DEBOUNCE_DELAY 50       // Debounce time in milliseconds
-#define YELLOW_DURATION 3000    // Yellow state duration in milliseconds
-#define RED_DURATION 10000      // Red state duration in milliseconds
+#define YELLOW_DURATION 5000    // Yellow state duration in milliseconds
+#define RED_DURATION 12000      // Red state duration in milliseconds
 
 enum ButtonState {
   BUTTON_IDLE,
